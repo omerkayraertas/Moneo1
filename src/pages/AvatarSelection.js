@@ -13,10 +13,18 @@ import cicek from '../assets/images/cicek.svg';
 
 const AvatarContainer = styled.div`
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   background: white;
+  
+  @media (max-width: 768px) {
+    min-height: 100vh;
+  }
+  
+  @media (max-height: 700px) {
+    height: auto;
+  }
 `;
 
 const HeaderSection = styled.div`

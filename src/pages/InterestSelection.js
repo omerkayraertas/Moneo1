@@ -7,12 +7,21 @@ import vektorBg3 from '../assets/images/vektor-bg-3.png';
 
 const PageContainer = styled.div`
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #6278E4;
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  
+  @media (max-width: 768px) {
+    min-height: 100vh;
+  }
+  
+  @media (max-height: 700px) {
+    height: auto;
+    overflow-y: auto;
+  }
 `;
 
 const Header = styled.div`
